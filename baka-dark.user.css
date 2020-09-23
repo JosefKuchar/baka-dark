@@ -7,5 +7,62 @@
 ==/UserStyle== */
 
 @-moz-document domain("baka.spselitdobruska.cz") {
-    /* Sem vložte kód… */
+  .simplebar-content ul li a,
+  .simplebar-content .bk-menu-empty,
+  .simplebar-content .bk-menu-logo,
+  .simplebar-content .bk-menu-hide,
+  .bk-navtop,
+  .bk-menu-logo,
+  #topheader {
+      background: #000 !important;
+  }
+
+  /* #topheader {
+      left: 230px;
+      width: calc(100% - 230px);
+  }
+
+  #panel.narrow ~ #topheader {
+      left: 60px;
+      width: calc(100% - 60px;)
+  }
+  */
+
+  body, #formbaka {
+      background: #000;
+  }
+
+  #obsah {
+      background: #111;
+  }
+
+  .bk-widget-header,
+  .bk-widget-body,
+  .floating-box {
+      background: #222 !important;
+  }
+
+  .bk-widget-header {
+      border-color: #111 !important;
+  }
+
+  #schedule .day-row, #schedule .day-item .empty, #schedule .day-item, #schedule .day-item div  {
+      border: none;
+  }
+
+  #schedule .day-row .odd-day-row {
+      background: #222;
+  }
+
+  .cara, .caraa, .bk-line {
+      display: none !important;
+  }
+
+  .bk-separator {
+      display: none;
+  }
+
+  nav li.level_Premium::after {
+      color: black;
+  }
 }
