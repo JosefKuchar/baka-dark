@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Bakalaři dark theme
 @namespace      https://github.com/JosefKuchar/baka-dark
-@version        1.0.2
+@version        1.0.3
 @description    Bakalaři
 @author         Josef Kuchař
 @preprocessor   stylus
@@ -16,7 +16,7 @@
     background: bar-color !important;
   }
   body, #formbaka {
-    background: bar-color;
+    background: bar-color !important;
   }
   #obsah {
     background: background-color;
@@ -53,5 +53,14 @@
   }
   .dxichSys {
     background-color: button-color !important;
+  }
+  .bk-navtop .menu-dropdown .bk-menu-avatar {
+      border: none;
+  }
+  #outer {
+      background: background-color !important;
+  }
+  #loginBox {
+      background: widget-color !important;
   }
 }
