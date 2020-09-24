@@ -1,68 +1,57 @@
 /* ==UserStyle==
 @name           Bakalaři dark theme
 @namespace      https://github.com/JosefKuchar/baka-dark
-@version        1.0.1
+@version        1.0.2
 @description    Bakalaři
 @author         Josef Kuchař
+@preprocessor   stylus
+@var            text bar-color         "Main bar color"    #000
+@var            text background-color  "Background color"  #111
+@var            text widget-color      "Widget color"      #222
+@var            text button-color      "Button color"      #111
 ==/UserStyle== */
 
 @-moz-document domain("baka.spselitdobruska.cz") {
-  .simplebar-content ul li a,
-  .simplebar-content .bk-menu-empty,
-  .simplebar-content .bk-menu-logo,
-  .simplebar-content .bk-menu-hide,
-  .bk-navtop,
-  .bk-menu-logo,
-  #topheader {
-      background: #000 !important;
+  .simplebar-content ul li a, .simplebar-content .bk-menu-empty, .simplebar-content .bk-menu-logo, .simplebar-content .bk-menu-hide, .bk-navtop, .bk-menu-logo, #topheader {
+    background: bar-color !important;
   }
-
-  /* #topheader {
-      left: 230px;
-      width: calc(100% - 230px);
-  }
-
-  #panel.narrow ~ #topheader {
-      left: 60px;
-      width: calc(100% - 60px;)
-  }
-  */
-
   body, #formbaka {
-      background: #000;
+    background: bar-color;
   }
-
   #obsah {
-      background: #111;
+    background: background-color;
   }
-
-  .bk-widget-header,
-  .bk-widget-body,
-  .floating-box {
-      background: #222 !important;
+  .bk-widget-header, .bk-widget-body, .floating-box {
+    background: widget-color !important;
   }
-
   .bk-widget-header {
-      border-color: #111 !important;
+    border-color: background-color !important;
   }
-
-  #schedule .day-row, #schedule .day-item .empty, #schedule .day-item, #schedule .day-item div  {
-      border: none;
+  #schedule .day-row, #schedule .day-item .empty, #schedule .day-item, #schedule .day-item div {
+    border: none;
   }
-
   #schedule .day-row .odd-day-row {
-      background: #222;
+    background: widget-color;
   }
-
   .cara, .caraa, .bk-line {
-      display: none !important;
+    display: none !important;
   }
-
   .bk-separator {
-      display: none;
+    display: none;
   }
-
   nav li.level_Premium::after {
-      color: black;
+    color: black;
+  }
+  #topheader #info-uzivatel .bk-menu-avatar {
+    border: none;
+  }
+  .myButton {
+    background: button-color !important;
+  }
+  .bk-btn-radio .myButton {
+    border: button-color;
+  }
+  .dxichSys {
+    background-color: button-color !important;
   }
 }
