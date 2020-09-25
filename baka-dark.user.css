@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Bakalaři dark theme
 @namespace      https://github.com/JosefKuchar/baka-dark
-@version        1.0.6
+@version        1.0.7
 @description    Bakalaři
 @author         Josef Kuchař
 @preprocessor   stylus
@@ -75,5 +75,8 @@
   }
   .bk-widget-header .ico32-modul-rozvrhHodin, .bk-widget-header .ico32-modul-suplovani, .bk-widget-header .ico32-modul-sluzby, .bk-widget-header .ico32-modul-klasifikace, .bk-widget-header .ico32-modul-domaciUkoly, .bk-widget-header .ico32-modul-novinky {
     color: black;
+  }
+  .widget-placeholder img {
+    filter: invert(1);
   }
 }
