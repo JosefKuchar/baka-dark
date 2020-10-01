@@ -39,8 +39,8 @@
   .bk-separator {
     display: none;
   }
-  nav li.level_Premium::after {
-    color: black;
+  nav li.level_Premium::after, nav li a.level_Premium::after {
+    color: black !important;
   }
   #topheader #info-uzivatel .bk-menu-avatar {
     border: none;
