@@ -79,4 +79,7 @@
   .widget-placeholder img {
     filter: invert(1);
   }
+  #inner {
+    top: initial;
+  }
 }
